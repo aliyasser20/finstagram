@@ -1,11 +1,16 @@
 header {
-  background-color: #244751;
-  color: #E8FDFF;
+  background-color: #9C27B0;
+  color: snow;
   padding-left: 20px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  box-shadow: 0px -3px 11px 6px #9c27b0c7;
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgba(155, 39, 176, 0.562);
+  ;
   font-family: 'Abril Fatface', cursive;
 }
 
@@ -28,4 +33,5 @@ a.photo:hover{
 
 a.photo {
   transition: padding 0.5s;
+  box-shadow: 1px 1px 1px 1px;
 }

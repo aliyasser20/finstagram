@@ -1,3 +1,9 @@
+###############################################
+# To show output:
+# 1. open terminal ---- bin/serve
+# 2. open chrome ---- http://127.0.01:3000
+###############################################
+
 # get'/' do
 #     File.read(File.join('app/views','index.html'))
 # end

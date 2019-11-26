@@ -4,9 +4,10 @@
 # 2. open chrome ---- http://127.0.01:3000
 ###############################################
 
-# get'/' do
-#     File.read(File.join('app/views','index.html'))
-# end
+get'/' do
+    File.read(File.join('app/views','index.erb'))
+    erb(:index)
+end
 
 def get_humanized_time_ago(time_ago_in_minutes)
     if time_ago_in_minutes >= 60

@@ -10,7 +10,6 @@ header {
 
 body {
   background-color: rgba(155, 39, 176, 0.562);
-  ;
   font-family: 'Abril Fatface', cursive;
 }
 
@@ -34,4 +33,8 @@ a.photo:hover{
 a.photo {
   transition: padding 0.5s;
   box-shadow: 1px 1px 1px 1px;
+}
+
+.full-form {
+  background-color:snow;
 }

@@ -1,3 +1,16 @@
+<header>
+  <a href="/" class="header-not-home"><h1>Finstagram</h1></a>
+  <div class="login-info">
+    <% if current_user %>
+      <%= current_user.username %>
+      <a href="/logout" class="top-bar-content">Logout</a>
+    <% else %>
+      <a href="/login" class="top-bar-content">Login</a>
+      <a href="/signup" class="top-bar-content">Signup</a>
+    <% end %>
+  </div>
+</header>
+
 <ul class="errors">
   <% @user.errors.full_messages.each do |message| %>
     <li><%= message %></li>
@@ -5,6 +18,7 @@
 </ul>
 
 <form action="/signup" method="POST" class="full-form">
+  <p></p>
   <div class="form-group">
     <label for="email">Email</label>
     <input type="email" id="email" name="email" value="<%= @user.email %>">

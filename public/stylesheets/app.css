@@ -1,15 +1,15 @@
 header {
-  background-color: #9C27B0;
+  background-color: darkred;
   color: snow;
   padding-left: 20px;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  box-shadow: 0px -3px 11px 6px #9c27b0c7;
+  box-shadow: 0px -3px 11px 6px rgb(136, 47, 47);
 }
 
 body {
-  background-color: rgba(155, 39, 176, 0.562);
+  background-color: orange;
   font-family: 'Abril Fatface', cursive;
 }
 
@@ -36,5 +36,20 @@ a.photo {
 }
 
 .full-form {
-  background-color:snow;
+  background-color: snow;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px darkred;
+  padding: 5px;
+  border-radius: 20px 60px;
+}
+
+.top-bar-content {
+  color: black;
+  padding: 10px;
+}
+
+.header-not-home {
+  color: white;
 }

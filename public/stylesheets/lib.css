@@ -114,7 +114,24 @@ main {
 
 .form-group {
   margin-bottom: 1em;
-  margin-left: 40%;
+  margin-left: 25%;
+}
+
+.form-group input {
+  background-color: rgb(244, 240, 240);
+  border-color: dimgray;
+  border-radius: 3px 9px;
+}
+
+.form-group button {
+  background-color: darkred;
+  color: white;
+  border-color: darkred;
+  border-radius: 5px 15px;
+}
+
+.form-group label {
+  color: darkred;
 }
 
 .new-comment input[type="text"] {

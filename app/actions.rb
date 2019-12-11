@@ -40,7 +40,7 @@ post '/signup' do
 end
 ###########################
 
-## Sign in Page ##
+## Login Page ##
 get '/login' do
   erb(:login)
 end
@@ -62,10 +62,29 @@ post '/login' do
 end
 ###########################
 
-## Sign out ##
+## Logout ##
 get '/logout' do
   session[:user_id] = nil
   "Logout successful!"
   redirect to('/')
+end
+###########################
+
+## Post Page ##
+get '/post' do 
+  erb(:post)
+end
+
+post '/post' do 
+  photoUrlInputted = params[:photo_url]
+  
+  @finstagram_posts = FinstagramPost.new({user_id: session[:user_id], photo_url: photoUrlInputted}) 
+  
+  if @finstagram_posts.save
+  "Post Uploaded!"
+  redirect to('/')
+  else
+    erb(:post)
+  end
 end
 ###########################

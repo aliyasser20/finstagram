@@ -71,20 +71,27 @@ end
 ###########################
 
 ## Post Page ##
-get '/post' do 
-  erb(:post)
+get '/finstagram_posts/new' do
+  @finstagram_post = FinstagramPost.new
+  erb(:"finstagram_posts/new")
 end
 
-post '/post' do 
+post '/finstagram_posts' do
   photoUrlInputted = params[:photo_url]
   
-  @finstagram_posts = FinstagramPost.new({user_id: session[:user_id], photo_url: photoUrlInputted}) 
+  @finstagram_post = FinstagramPost.new({ photo_url: photoUrlInputted, user_id: current_user.id }) 
   
-  if @finstagram_posts.save
-  "Post Uploaded!"
-  redirect to('/')
+  if @finstagram_post.save
+    redirect to('/')
   else
-    erb(:post)
+    erb(:"finstagram_posts/new")
   end
+end
+###########################
+
+##
+get '/finstagram_posts/:id' do
+  @finstagram_post = FinstagramPost.find(params[:id])
+  erb(:"finstagram_posts/show")
 end
 ###########################

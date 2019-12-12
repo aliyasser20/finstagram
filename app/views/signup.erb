@@ -1,16 +1,4 @@
-<header>
-  <a href="/" class="header-not-home"><h1>Finstagram</h1></a>
-  <div class="login-info">
-    <% if current_user %>
-      <%= current_user.username %>
-      <a href="/logout" class="top-bar-content">Logout</a>
-    <% else %>
-      <a href="/login" class="top-bar-content">Login</a>
-      <a href="/signup" class="top-bar-content">Signup</a>
-    <% end %>
-  </div>
-</header>
-
+<h2>Join Finstagram!</h2>
 <ul class="errors">
   <% @user.errors.full_messages.each do |message| %>
     <li><%= message %></li>

@@ -49,8 +49,18 @@ main {
   display: inline-block;
   padding: 1em;
   width: 100%;
-  border-radius: 4px;
   box-sizing: border-box;
+  color: darkred;
+  font-size: 20px;
+  border:solid 2px darkred;
+  border-radius: 5px 15px;
+  transition: all 0.15s;
+}
+
+.new-finstagram-post > .button:hover {
+  color: white;
+  background-color: orange;
+  border-radius: 5px 15px;
 }
 
 .button {

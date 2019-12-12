@@ -52,13 +52,14 @@ main {
   box-sizing: border-box;
   color: darkred;
   font-size: 20px;
-  border:solid 2px darkred;
+  border:solid 2px orange;
   border-radius: 5px 15px;
   transition: all 0.15s;
 }
 
 .new-finstagram-post > .button:hover {
   color: white;
+  border:solid 2px darkred;
   background-color: orange;
   border-radius: 5px 15px;
 }

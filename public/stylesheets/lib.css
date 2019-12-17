@@ -148,3 +148,17 @@ main {
 .new-comment input[type="text"] {
   width: 100%;
 }
+
+.new-comment {
+  display: flex;
+  width: 100%;
+}
+
+.new-comment button {
+  height: 40px;
+  background-color: darkred;
+  color: white;
+  border: solid 1px;
+  border-color: darkred;
+  border-radius: 0 15px 5px 0;
+}

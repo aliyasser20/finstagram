@@ -53,3 +53,17 @@ a.photo {
 .header-not-home {
   color: white;
 }
+
+.comment-style {
+  width: 100%;
+  height: 100%;
+}
+
+.comment-style input {
+  height: 40px;
+  background-color: rgb(244, 240, 240);
+  border-color: dimgray;
+  border: solid 1px;
+  border-radius: 3px 0 0 9px;
+  border-right: 0px;
+}
